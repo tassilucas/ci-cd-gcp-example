@@ -22,6 +22,6 @@ jobs:
 
       - name: Build & Push Docker image
         run: |
-          gcloud auth activate-service-account --key-file=${{ env.GOOGLE_APPLICATION_CREDENTIALS }}
           docker build -t us-central1-docker.pkg.dev/de-practice-469814/ci-cd-example/ci-cd-example:latest .
           docker push us-central1-docker.pkg.dev/de-practice-469814/ci-cd-example/ci-cd-example:latest
+
